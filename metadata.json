@@ -1,0 +1,6 @@
+{
+  "name": "SRM Medical Record System",
+  "description": "SRM Medical Record System (SRM-HPRMS) - Comprehensive, secure healthcare information system with role-based access, EMR timeline, e-prescriptions, lab tests, inpatient admissions, appointment scheduling, vitals tracking, and clinical analytics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

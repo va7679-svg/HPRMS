@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="srmBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#003366" />
+      <stop offset="100%" stop-color="#001F3F" />
+    </linearGradient>
+    <linearGradient id="srmGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="50%" stop-color="#F5B041" />
+      <stop offset="100%" stop-color="#D4AC0D" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Outer Circular Seal with Gold Border -->
+  <circle cx="250" cy="250" r="235" fill="url(#srmBlueGrad)" stroke="url(#srmGoldGrad)" stroke-width="14" filter="url(#shadow)" />
+  <circle cx="250" cy="250" r="215" fill="none" stroke="#FFD700" stroke-width="2.5" stroke-dasharray="6,4" />
+
+  <!-- Inner Concentric Ring -->
+  <circle cx="250" cy="250" r="145" fill="#FFFFFF" stroke="url(#srmGoldGrad)" stroke-width="6" />
+
+  <!-- Curved Text Top: SRM INSTITUTE OF SCIENCE & TECHNOLOGY -->
+  <path id="textArcTop" d="M 65 250 A 185 185 0 0 1 435 250" fill="none" />
+  <text font-family="'Arial', 'Helvetica', sans-serif" font-weight="900" font-size="20" fill="#FFD700" letter-spacing="3.5">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+      SRM INSTITUTE OF SCIENCE &amp; TECHNOLOGY
+    </textPath>
+  </text>
+
+  <!-- Curved Text Bottom: MEDICAL RECORD SYSTEM -->
+  <path id="textArcBottom" d="M 435 250 A 185 185 0 0 1 65 250" fill="none" />
+  <text font-family="'Arial', 'Helvetica', sans-serif" font-weight="800" font-size="18" fill="#FFFFFF" letter-spacing="3">
+    <textPath href="#textArcBottom" startOffset="50%" text-anchor="middle">
+      ★ MEDICAL RECORD SYSTEM ★
+    </textPath>
+  </text>
+
+  <!-- Central Symbol: Sunburst rays, Open Book / Medical Caduceus Emblem -->
+  <!-- Sun Rays inside inner circle -->
+  <g transform="translate(250, 250)">
+    <!-- Rays -->
+    <path d="M 0 -115 L 6 -80 L -6 -80 Z" fill="#F39C12" />
+    <path d="M 81 -81 L 60 -55 L 50 -65 Z" fill="#F39C12" />
+    <path d="M 115 0 L 80 6 L 80 -6 Z" fill="#F39C12" />
+    <path d="M 81 81 L 50 65 L 60 55 Z" fill="#F39C12" />
+    <path d="M 0 115 L -6 80 L 6 80 Z" fill="#F39C12" />
+    <path d="M -81 81 L -60 55 L -50 65 Z" fill="#F39C12" />
+    <path d="M -115 0 L -80 -6 L -80 6 Z" fill="#F39C12" />
+    <path d="M -81 -81 L -50 -65 L -60 -55 Z" fill="#F39C12" />
+    
+    <!-- Red Cross & Medical Torch / Staff Base -->
+    <rect x="-14" y="-70" width="28" height="90" rx="4" fill="#C0392B" />
+    <rect x="-45" y="-45" width="90" height="28" rx="4" fill="#C0392B" />
+    <circle cx="0" cy="-31" r="9" fill="#FFFFFF" />
+
+    <!-- Big SRM Typography in Centre -->
+    <rect x="-95" y="24" width="190" height="48" rx="8" fill="url(#srmBlueGrad)" stroke="url(#srmGoldGrad)" stroke-width="3" />
+    <text x="0" y="58" font-family="'Arial Black', 'Impact', sans-serif" font-weight="900" font-size="34" fill="#FFD700" text-anchor="middle" letter-spacing="4">
+      SRM
+    </text>
+
+    <!-- Small Moto ribbon / subtext below SRM -->
+    <text x="0" y="86" font-family="'Arial', sans-serif" font-weight="800" font-size="10" fill="#003366" text-anchor="middle" letter-spacing="1.5">
+      LEARN • LEAP • LEAD
+    </text>
+  </g>
+</svg>
